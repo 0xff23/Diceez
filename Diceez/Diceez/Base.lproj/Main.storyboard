@@ -23,27 +23,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-iS-far">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-iS-far">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="CU1-Ig-8Z0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="CU1-Ig-8Z0">
                                 <rect key="frame" x="40" y="273" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="tZG-WV-0wg"/>
-                                    <constraint firstAttribute="height" constant="120" id="zrn-7i-PZT"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="hgC-dj-OIa">
-                                <rect key="frame" x="215" y="273" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Mv2-Au-YCx"/>
-                                    <constraint firstAttribute="height" constant="120" id="fSO-9X-ISS"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIY-Xn-vSi">
-                                <rect key="frame" x="76" y="506" width="222" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIY-Xn-vSi">
+                                <rect key="frame" x="77" y="564" width="222" height="59"/>
                                 <color key="backgroundColor" red="0.5625883936882019" green="0.16166304051876068" blue="0.14518795907497406" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                 <state key="normal" title="Roll">
@@ -54,11 +42,24 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Juo-zk-kDb">
-                                <rect key="frame" x="21" y="20" width="333" height="152"/>
+                                <rect key="frame" x="41" y="26" width="294" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="hgC-dj-OIa">
+                                <rect key="frame" x="215" y="273" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vji-iS-far" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Da-Np-yqJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mIY-Xn-vSi" secondAttribute="trailing" constant="76" id="Fha-v0-EEa"/>
+                            <constraint firstItem="Vji-iS-far" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="O82-O0-krl"/>
+                            <constraint firstItem="mIY-Xn-vSi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="UQm-u3-xco"/>
+                            <constraint firstItem="Vji-iS-far" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xnd-9f-xIv"/>
+                            <constraint firstItem="Vji-iS-far" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oWp-HS-F1l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mIY-Xn-vSi" secondAttribute="bottom" constant="44" id="yuG-iQ-gNm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
